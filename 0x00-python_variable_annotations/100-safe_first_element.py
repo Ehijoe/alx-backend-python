@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Any."""
+"""Using the Any type."""
 from typing import Any, Sequence, Union
 
 
