@@ -2,6 +2,6 @@
 """An adding function."""
 
 
-def add(a: str, b: str) -> str:
-    """Return the sum of two floats."""
+def concat(a: str, b: str) -> str:
+    """Return the concatenation of two strings."""
     return a + b
