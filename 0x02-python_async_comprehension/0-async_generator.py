@@ -6,6 +6,6 @@ from time import sleep
 
 async def async_generator():
     """Yield 10 random numbers asynchronously."""
-    async for i in range(10):
+    for i in range(10):
         sleep(1)
         yield uniform(0, 10)
