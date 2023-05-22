@@ -89,7 +89,7 @@ class TestIntegrationGithubOrgClient(TestCase):
             return response
 
         patcher = patch("requests.get", side_effect=requester)
-        self.requester = patcher.start()
+        self.get_patcher = patcher.start()
 
     def test_public_repos(self):
         """Test that the correct public repos are returned."""
@@ -105,4 +105,4 @@ class TestIntegrationGithubOrgClient(TestCase):
     @classmethod
     def tearDownClass(self):
         """Stop the mock of requests.get."""
-        self.requester.stop()
+        self.get_patcher.stop()
